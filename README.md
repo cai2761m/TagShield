@@ -95,5 +95,3 @@ npm run package      # dist/tag-shield + SHA256SUMS.txt
 ## 验证范围
 
 自动化覆盖核心规格、安全保护、持久回滚、冲突拒绝、写入失败、输入期间竞态、CodeMirror Undo/Redo；浏览器覆盖真实编辑器、弹窗、移动宽度、模拟重启及自动模式。详见 [验收记录](docs/VALIDATION.md)。
-
-浏览器中的 Obsidian 容器为测试替身；**尚未在真实 Obsidian 桌面或移动应用内验证**。插件未发布到社区市场，项目也未连接远程 Git 仓库。首次使用请按安装步骤在测试笔记验收。
