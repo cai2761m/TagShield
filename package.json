@@ -1,0 +1,39 @@
+{
+  "name": "tag-shield",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Safely protects HTML-like syntax from breaking Markdown rendering in Obsidian.",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "npm run typecheck && node esbuild.config.mjs production",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "lint": "eslint src tests",
+    "check": "npm run typecheck && npm run lint && npm test && npm run build",
+    "package": "npm run build && node scripts/package.mjs",
+    "test:browser": "node scripts/browser-test.mjs"
+  },
+  "devDependencies": {
+    "@codemirror/commands": "6.8.1",
+    "@codemirror/lang-markdown": "6.3.2",
+    "@codemirror/language": "6.11.0",
+    "@codemirror/state": "6.5.0",
+    "@codemirror/view": "6.38.6",
+    "@eslint/js": "^9.25.1",
+    "@lezer/common": "^1.2.3",
+    "@lezer/markdown": "^1.4.3",
+    "@types/node": "^22.15.0",
+    "esbuild": "^0.25.3",
+    "eslint": "^9.25.1",
+    "jsdom": "^26.1.0",
+    "obsidian": "1.13.1",
+    "playwright": "^1.51.1",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.31.1",
+    "vitest": "^4.1.11"
+  },
+  "overrides": {
+    "@codemirror/state": "$@codemirror/state",
+    "@codemirror/view": "$@codemirror/view"
+  }
+}

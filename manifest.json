@@ -1,0 +1,9 @@
+{
+  "id": "tag-shield",
+  "name": "TagShield",
+  "version": "1.0.0",
+  "minAppVersion": "1.5.0",
+  "description": "Safely protects HTML-like syntax from breaking Markdown rendering in Obsidian.",
+  "author": "TagShield contributors",
+  "isDesktopOnly": false
+}

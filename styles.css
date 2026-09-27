@@ -1,0 +1,10 @@
+.tagshield-candidate { text-decoration: underline dotted var(--color-orange); text-underline-offset: 4px; cursor: pointer; }
+.tagshield-modal { max-width: 100%; }
+.tagshield-modal pre { white-space: pre-wrap; overflow-wrap: anywhere; padding: 12px; border-radius: 6px; background: var(--background-secondary); max-height: 45vh; overflow: auto; user-select: text; }
+.tagshield-diff { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
+.tagshield-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-block: 12px; }
+.tagshield-item { border-bottom: 1px solid var(--background-modifier-border); padding: 16px 0; }
+.tagshield-item p { color: var(--text-muted); }
+.tagshield-list { max-height: 60vh; overflow: auto; }
+.tagshield-warning { color: var(--text-error); }
+@media (max-width: 600px) { .tagshield-diff { grid-template-columns: 1fr; } }
